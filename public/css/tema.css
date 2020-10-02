@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/09/2020, 20:43:58
+    Author     : jeferson
+*/
+
+/* Color Theme Swatches in Hex */
+.ciano { background-color:  #29C7C2; }
+.rose { background-color: #FFCACC; }
+.rosa { background-color: #F29EAA; }
+.piscina { background-color: #A7FFFF; }
+.azulVerde { background-color: #25E2E8; }
+
+.texto-ciano { color:  #29C7C2; }
+.texto-rose { color: #FFCACC; }
+.texto-rosa { color: #F29EAA; }
+.texto-piscina { color: #A7FFFF; }
+.texto-azulVerde { color: #25E2E8; }
