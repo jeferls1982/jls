@@ -8,7 +8,7 @@
                 <span class="">{{$horas->total}} h</span>
                 @else
                  <span class="">
-                    Adicione a quantidade de horas a pagar...
+                    Adicione as horas a pagar...
                 </span>                
                 @endif
 
