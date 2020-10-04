@@ -27,7 +27,7 @@ class HoraExtraController extends Controller {
             $totalHoras = $this->totalHoras->where('user_id', auth()->id())->first();
             $relatorios = $this->horaPaga->where('user_id', auth()->id())->orderBy('data', 'desc')->get();
             $horas = json_decode($this->getDados($relatorios));
-
+            
             return view('sites.hora-extra.home', compact('horas', 'relatorios','totalHoras'));
         } else {
             return redirect('/login');
@@ -117,7 +117,8 @@ class HoraExtraController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function destroy($id) {
-        //
+        $this->horaPaga->destroy($id);
+        return redirect('/he');
     }
 
     public function addPagamento(Request $request) {

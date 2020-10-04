@@ -31,18 +31,30 @@
 <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="grafico" role="tabpanel" aria-labelledby="home-tab">
         <div class="container">
+            <blockquote class="blockquote mt-2">
+                <p class="mb-0">Porcentagem de horas pagas.</p>
+                <footer class="blockquote-footer">Clique em uma cor para ver a porcentagem:</footer>
+            </blockquote>
             <grafico-component></grafico-component>
         </div>
 
     </div>
     <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
         <div class="container">
+            <blockquote class="blockquote mt-2">
+                <p class="mb-0">Histórico de horas lançadas</p>
+                <footer class="blockquote-footer">Todas as horas-extra que você lançou.</footer>
+            </blockquote>
             @include('sites.hora-extra.table')
         </div>
 
     </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <div class="container py-3">
+        <div class="container">
+            <blockquote class="blockquote mt-2">
+                <p class="mb-0">Novo lançamento de hora</p>
+                <footer class="blockquote-footer">Registre as horas que você já pagou</footer>
+            </blockquote>
             <form method="post" action="/he/addPagamento">
                 @csrf
                 <div class="form-group">

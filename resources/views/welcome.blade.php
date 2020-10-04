@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="theme-color" content="#29C7C2">
+        
         <title>JLSonline</title>
 
         <!-- Fonts -->
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/tema.css') }}" rel="stylesheet">
-
+        <meta name="theme-color" content="#29C7C2">
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light ciano navbar-laravel">

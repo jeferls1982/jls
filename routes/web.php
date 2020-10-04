@@ -11,6 +11,8 @@
 |
 */
 Route::get('/he/get_dados_grafico', 'he\HoraExtraController@getDadosGrafico');
+Route::get('/he/delete/{id}', 'he\HoraExtraController@destroy');
+
 Route::post('/he/addPagamento', 'he\HoraExtraController@addPagamento');
 Route::resource('/he', 'he\HoraExtraController');
 
