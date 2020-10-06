@@ -22,6 +22,7 @@ Vue.component('date-component', require('./components/horaExtra/DataComponent'))
 Vue.component('timeinicio-component', require('./components/horaExtra/HoraInicio'));
 Vue.component('timefim-component', require('./components/horaExtra/HoraFim'));
 Vue.component('grafico-component', require('./components/horaExtra/Grafico'));
+Vue.component('he-component', require('./components/horaExtra/Home'));
 
 const app = new Vue({
     store,

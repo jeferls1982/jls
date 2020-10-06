@@ -1,20 +1,22 @@
 <template>
-    <div class="container py-4">
-        <b-card bg-variant="dark" text-variant="white" title="Compensado Horas">
-            <b-card-text>
-                Calcular o quanto de horas vc precisa pagar...
-            </b-card-text>
-            <router-link to="/hora-extra">HoraExtra</router-link>
-            <b-button href="#" variant="primary">Acessar</b-button>
-        </b-card>
-        
+  <div>
+    <div class="container">
+        <sidebar-component align="right"></sidebar-component>
+
+      
+    </div>
+  </div>
 </template>
 
 <script>
-    import HoraComponent from './horaExtra/Home'
-    export default {
-        components:{
-            HoraComponent
-        }
-    }
+import HoraComponent from "./horaExtra/Home";
+import NoticiaComponent from "./noticias/Home";
+import SidebarComponent from "./sidebarComponent";
+export default {
+  components: {
+    HoraComponent,
+    NoticiaComponent,
+    SidebarComponent,
+  },
+};
 </script>

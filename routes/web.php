@@ -17,6 +17,7 @@ Route::post('/he/addPagamento', 'he\HoraExtraController@addPagamento');
 Route::resource('/he', 'he\HoraExtraController');
 
 
+Route::get('/noticias/getNoticias', 'noticias\NoticiaController@getNoticias');
 
 
 Route::get('/', function () {

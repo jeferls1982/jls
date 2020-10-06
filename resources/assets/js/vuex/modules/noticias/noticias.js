@@ -9,13 +9,13 @@ export default {
             state.items = noticias
         }
     },
-    actions: {
-        loadNoticias(context) {
+    actions: {        
+        getNoticias(context) {
             axios
-                .get("/getNoticias")
+                .get("/noticias/getNoticias")
                 .then((response) => {
                     //  this.state.items = response.data.articles;
-                    //  console.log(response);
+                      //console.log(response.data.articles);
 
                      context.commit('LOAD_NOTICIAS', response.data.articles)
                 })
@@ -24,40 +24,14 @@ export default {
                 })
                 .finally(() => {});
         },
-        atualizarNoticias(context) {
-            axios
-                .get("/noticias")
-                .then((response) => {
-                    //  this.state.items = response.data.articles;
-                    //  console.log(response);
-
-                     context.commit('LOAD_NOTICIAS', response.data.articles)
-                })
-                .catch((errors) => {
-                    console.log(errors);
-                })
-                .finally(() => {});
-        },
-        loadEsportes(context) {
-            axios
-                .get("/getEsportes")
-                .then((response) => {
-                    //  this.state.items = response.data.articles;
-                    //  console.log(response);
-                    console.log(response)
-                     context.commit('LOAD_NOTICIAS', response.data.articles)
-                })
-                .catch((errors) => {
-                    console.log(errors);
-                })
-                .finally(() => {});
-        },
+        
 
 
 
     },
     getters: {
         getNoticias(state) {
+            console.log(state.items)
             return state.items
         }
     }
