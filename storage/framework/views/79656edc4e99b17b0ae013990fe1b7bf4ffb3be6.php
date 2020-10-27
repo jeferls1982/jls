@@ -1,7 +1,7 @@
 <?php $__env->startSection('content'); ?>
 <div class="container">
     <app-component></app-component>
-    <router-view></router-view>
+    
 </div>
 <?php $__env->stopSection(); ?>
 

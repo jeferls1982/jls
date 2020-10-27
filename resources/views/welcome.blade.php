@@ -13,8 +13,9 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/tema.css') }}" rel="stylesheet">
         <meta name="theme-color" content="#29C7C2">
+        
     </head>
-    <body>
+    <body style="background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-colorful-background-picture-image_280936.jpg')">
         <nav class="navbar navbar-expand-md navbar-light ciano navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -77,8 +78,8 @@
             @yield('content')
             
            
-
-            <router-view></router-view>
+            
+            
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

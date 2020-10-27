@@ -21,6 +21,16 @@
             >Últimas Notícias</b-list-group-item
           >
         </router-link>
+        <router-link :to="{ name: 'loterias' }">
+          <b-list-group-item button v-b-toggle.sidebar-1 
+            >Loterias</b-list-group-item
+          >
+        </router-link>
+        <router-link to="/loja">
+          <b-list-group-item button v-b-toggle.sidebar-1 
+            >Ecommerce</b-list-group-item
+          >
+        </router-link>
 
         <!-- <b-list-group-item button v-b-toggle.sidebar-1
           >Disabled button</b-list-group-item
